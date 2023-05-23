@@ -1,0 +1,80 @@
+.header{
+    background-color: black;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    height:  46px;
+    top : 0px;
+    width: 100%;
+    position: fixed;
+    z-index: 2;
+}
+/* box-shadow : bóng đỗ ngang/ bóng đỗ dọc / độ mờ / độ loan / màu sắc  */
+.header .nav > li{
+    display: inline-block;
+    position: relative;
+} 
+
+.header .search-button{
+    position: absolute;
+    line-height: 46px;
+    padding: 0 15px;
+    right: 0;
+    top: 0;
+}
+.header .search-button:hover{
+    background-color: red;
+    cursor: pointer;
+}
+
+.nav > li a{
+    color: white;
+    line-height: 46px;
+    text-decoration: none;
+    text-transform: uppercase;
+    list-style-type: none;
+    padding: 12px 24px;
+} 
+.nav > li:hover{
+    box-shadow: 0 0 10px white;
+}
+.nav > li:hover,
+.nav > li:hover > a{
+    background-color:rgb(213, 210, 210);
+    color: black;
+}
+
+.nav .subnav{
+    position: absolute;
+    top : 100%;
+    display:  none;
+    box-shadow: 0 0 10px #0b0b0bda;
+}
+
+.nav .subnav li,
+.subnav li a{
+    background-color: #fff;
+    color: #000;
+    text-transform: capitalize;
+    list-style-type: none;
+}
+
+.nav .subnav li:hover,
+.subnav li:hover a{
+    background-color: rgb(213, 210, 210);
+    color: black;
+}
+
+.nav li:hover .subnav{
+    display: block;
+}
+
+.header .arrow-icon{
+    font-size: 14px;
+}
+
+.header .search-icon{
+    font-size: 14px;
+    font-weight: bold;
+}
+
+

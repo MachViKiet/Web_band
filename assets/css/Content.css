@@ -1,0 +1,89 @@
+.content .content-section{
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 64px 0;
+}
+
+.content .content-section .section-heading,
+.content .content-section .section-sub-heading{
+   text-align: center;
+}
+
+.content .content-section .section-heading{
+    font-size: 30px;
+    font-weight: 500;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+}
+
+.content .content-section .section-sub-heading{
+    font-size: 15px;
+    font-style: italic;
+    opacity: 0.6;
+    padding-bottom: 20px;
+}
+
+.content .text{
+    text-align: justify;
+    line-height: 1.4;
+}
+
+.content .member-items .member-list{
+    width: 70%;
+    text-align: center;
+}
+
+.content .member-items{
+    float: left;
+    text-align: center;
+    width: 33.333333%
+}
+
+.content .member-items .member-name{
+    font-size: 15px;
+    font-weight: 200;
+    margin-top: 50px;
+}
+
+.content .member-items .member-img{
+    width: 154px;
+    margin-top: 15px;
+    border-radius: 4px;
+}
+
+.content .tour-section{
+    background-color: black;
+    color: #fff;
+}
+
+.content .tour-section .stickets-list{
+    background-color:#fff;
+    color: black;
+    list-style-type: none;
+}
+
+.tour-section .stickets-list li{
+    color: #757577;
+    font-size: 15px;
+    padding: 11px 16px;
+    border-bottom: 1px solid #ddd;
+}
+
+.stickets-list .sold-out{
+    color: #fff;
+    background-color: red;
+    padding: 3px;
+    border-radius: 4px;
+}
+
+.stickets-list .quantily{
+    float: right;   
+    height: 20px;
+    width: 24px;
+    background-color: #000;
+    color: #fff;
+    border-radius: 50%;
+    text-align: center;
+}

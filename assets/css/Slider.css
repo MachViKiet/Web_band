@@ -1,0 +1,27 @@
+.slider{
+    margin: 46px 0 0 0;
+    padding-top: 50%;
+    background-color: aliceblue;
+    /* background: url('/assets/slider2.jpg') top center / cover no-repeat; */
+    position: relative;
+}
+.slider-img{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+.slider .bound{
+    position: absolute;
+    color:#fff ;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+.slider .title,
+.slider .description{
+    padding: 5px 0;
+    font-weight: lighter;
+}

@@ -1,0 +1,20 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    border: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.main_web
+{
+    min-height: auto;
+    background-color:white;
+}
+ul,
+li,
+ol{
+    padding-inline-start: 0;
+}
+
+.clear{
+    clear: both;
+}
