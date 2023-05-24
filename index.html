@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="assets/css/Header.css">
     <link rel="stylesheet" href="assets/css/Slider.css">
     <link rel="stylesheet" href="assets/css/Content.css">
+    <link rel="stylesheet" href="assets/css/modal/tickets.css">
     <link rel="stylesheet" href="assets/icon/themify-icons-font/themify-icons/themify-icons.css">
 </head>
 
@@ -40,7 +41,7 @@
         </div>
         <div class="slider">
             <!-- /* ~~~~~~~  fix   ~~~~~~~~ */ -->
-            <img  class="slider-img" src="./assets/img/slider2.jpg" alt="slider-img">
+            <img class="slider-img" src="./assets/img/slider2.jpg" alt="slider-img">
             <!-- /* ~~~~~~~        ~~~~~~~~ */ -->
 
             <div class="bound">
@@ -94,17 +95,108 @@
                         <li>October <span class="sold-out">Sold out</span></li>
                         <li>November <span class="quantily">3</span></li>
                     </div>
+                    <div class="place-list">
+                        <div class="place-items">
+                            <img src="./assets/img/place1.jpg" alt="New York" class="place-img">
+                            <div class="place-content">
+                                <h3 class="place-heading">New York</h3>
+                                <p class="place-time">Fri 27 Nov 2016</p>
+                                <p class="place-description">Praesent tincidunt sed tellus ut rutrum sed vitae justo.
+                                </p>
+                                <button class="place-buy-button js-buy-ticket">Buy Tickets</button>
+                            </div>
+                        </div>
+                        <div class="place-items">
+                            <img src="./assets/img/place2.jpg" alt="New York" class="place-img">
+                            <div class="place-content">
+                                <h3 class="place-heading">Paris</h3>
+                                <p class="place-time">Fri 27 Nov 2016</p>
+                                <p class="place-description">Praesent tincidunt sed tellus ut rutrum sed vitae justo.
+                                </p>
+                                <button class="place-buy-button js-buy-ticket">Buy Tickets</button>
+                            </div>
+                        </div>
+                        <div class="place-items">
+                            <img src="./assets/img/place3.jpg" alt="New York" class="place-img">
+                            <div class="place-content">
+                                <h3 class="place-heading">San Francisco</h3>
+                                <p class="place-time">Fri 27 Nov 2016</p>
+                                <p class="place-description">Praesent tincidunt sed tellus ut rutrum sed vitae justo.
+                                </p>
+                                <button class="place-buy-button js-buy-ticket">Buy Tickets</button>
+                            </div>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
                 </div>
             </div>
 
-            <!-- <div class="content-section">
+            <div class="content-section">
                 <h2 class="section-heading">Contact</h2>
-                <p class="section-sub-heading">Fan? Drop a note! </p> -->
+                <p class="section-sub-heading">Fan? Drop a note! </p>
 
             </div>
 
         </div>
     </div>
+    <div class="modal-ticket">
+        <div class="modal-container">
+            <div class="modal-close js-modal-close">
+                <a><i class="ti-close"></i></a>
+            </div>
+            <div class="modal-header">
+                <i class="ti-bag"></i>
+                Tickets
+            </div>
+            <div class="modal-body">
+                <label for="" class="modal-label">
+                    <i class="ti-shopping-cart"></i>
+                    Tickets, $15 per person
+                </label>
+                <input type="text" class="modal-input" placeholder="How many">
+
+                <label for="" class="modal-label">
+                    <i class="ti-user"></i>
+                    Send to
+                </label>
+                <input type="email" class="modal-input" placeholder="Enter email">
+
+                <div class="modal-pay">
+                    <a href="" class="modal-pay-button">PAY <i class="ti-check"></i></a>
+                </div>
+                <div class="bound-close">
+                    <div class="modal-close2 js-modal-close">
+                        <button class="modal-close2-button">
+                            Close
+                            <i class="ti-close"></i>
+                        </button>
+                    </div>
+                    <div class="modal-more">
+                        <p>Need <a href="">help?</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const buyBtns = document.querySelectorAll('.js-buy-ticket')
+        const modal = document.querySelector('.modal-ticket')
+        const CloseBuyBtns = document.querySelectorAll('.js-modal-close')
+
+        function showBuyTickets(){
+            modal.classList.add('open')
+        }
+        function closeBuytickets(){
+            modal.classList.remove('open')
+        }
+        for(const buyBtn of buyBtns){
+            buyBtn.addEventListener('click',showBuyTickets)
+        }
+        for(const closebuyBtn of CloseBuyBtns){
+            closebuyBtn.addEventListener('click',closeBuytickets)
+        }
+    </script>
 </body>
 
 </html>

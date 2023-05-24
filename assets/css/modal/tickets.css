@@ -1,0 +1,137 @@
+.modal-ticket
+{
+    margin-top: 46px;
+    background-color: rgba(0,0,0,0.5);
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+.modal-ticket .modal-container{
+    background-color: #fff;
+    position: relative;
+    width: 70%;
+    max-width: 500px;
+    animation: FadeIn ease 0.3s;
+}
+
+.modal-ticket .modal-container .modal-header
+{
+    background-color: #009688;
+    color: #fff;
+    padding: 50px 0;
+    text-align: center;
+    letter-spacing: 4px;
+    font-size: 30px;
+}
+.modal-ticket .modal-close{
+    position: absolute;
+    background-color: #009688;
+    color: #fff;
+    right: 0;
+    padding: 20px;
+    display: inline-block;
+}
+.modal-ticket .modal-close a{
+    color: #fff;
+    text-decoration: none;
+}
+.modal-ticket .modal-close:hover,
+.modal-ticket .modal-close:hover a
+{
+    background-color: #ddd;
+    color: black;
+    font-weight: 500;
+}
+.modal-ticket .modal-body .modal-label{
+    display: block;
+    padding: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
+}
+.modal-ticket .modal-body .modal-input{
+    width: 96%;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    padding: 8px 5px;
+    border: 1px solid rgb(167, 162, 162);
+}
+.modal-ticket .modal-body .modal-pay{
+    width: 96%;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    margin-top: 20px ;
+    padding: 15px 0px;
+    background-color: #009688;
+    color: #fff;
+}
+.modal-pay a{
+    color: #fff;
+    text-decoration: none;
+}
+.modal-pay .modal-pay-button .ti-check{
+    font-weight: 1000;
+}
+.modal-body .modal-pay:hover,
+.modal-body .modal-pay:hover a,
+.modal-body .modal-pay:hover i{
+    background-color: #ddd;
+    color: black;
+    cursor: pointer;
+}
+.modal-ticket .modal-body .bound-close{
+    width: 96%;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    background-color:white;
+    height: 80px;
+}
+.modal-ticket .bound-close .modal-close2{
+    position: absolute;
+    background-color: red;
+    width: fit-content;
+    padding: 10px 20px;
+    bottom: 0;
+    margin: 20px 0px;
+}
+.modal-ticket .bound-close .modal-close2 .modal-close2-button,
+.modal-ticket .bound-close .modal-close2 i{
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    background-color: red;
+}
+.modal-ticket .bound-close .modal-close2:hover .modal-close2-button,
+.modal-ticket .bound-close .modal-close2:hover i,
+.modal-ticket .bound-close .modal-close2:hover{
+    background-color: #ddd;
+    color: black;
+    cursor: pointer;
+}
+.modal-ticket .bound-close .modal-more{
+    position: absolute;
+    right: 10px;
+    bottom: 0;
+    margin: 25px 0px;
+}
+
+
+.modal-ticket.open{
+    display: flex;
+}
+
+@keyframes FadeIn{
+    from{
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
